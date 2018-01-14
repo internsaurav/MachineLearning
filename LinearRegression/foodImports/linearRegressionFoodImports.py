@@ -15,15 +15,14 @@ def main():
 	food_import_data = extract_import_data("food_import_sources.xlsx")
 	population_data = extract_population_data("population_data.txt")
 	combined_data = makeDataFrame(year,food_production_data,population_data,food_import_data)
+	coeff_of_determination,rmse,coefficients,y_test,y_pred,intercept = apply_linear_regression(combined_data)
 	output += "DataFrame:\n"
 	output += str(combined_data)+"\n\n"
-	coeff_of_determination,rmse,coefficients,y_test,y_pred,intercept = apply_linear_regression(combined_data)
 	output += "y_test:\n"+str(y_test)+"\n\n"
 	output += "y_predicted:\n"+str(y_pred)+"\n\n"
 	output += "coeff_of_determination: " + str(coeff_of_determination) + "\n\n"
 	output += "RMSE: " + str(rmse) + "\n\n"
 	output += "Regression Equation:\nEstimated_imports = population*" + str(coefficients[0]) + " + production*" + str(coefficients[1]) + " + "+str(intercept) + "\n"
-
 	f = open("output.txt",'w')
 	f.write(output)
 	f.close()
