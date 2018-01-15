@@ -1,4 +1,4 @@
-# Application of Linear Regression to find a re3lation between food imports, food procudtion and population
+# Application of Linear Regression to find a relation between food imports, food procudtion and population
 This code attempts to find a relation between US food production, its population and its food imports using linear regression.<br /><br />
 
 Following are the sources of data:<ol>
