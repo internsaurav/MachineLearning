@@ -13,6 +13,8 @@ Classification Algorithm used: Scikit-learn decision tree classifier <br />
 Detailed results are present in the file output.txt<br />
 ### Decision Tree obtained:
 ![alt text](Seeds.jpg "Decision Tree")
+#### References:
+[M. Charytanowicz, J. Niewczas, P. Kulczycki, P.A. Kowalski, S. Lukasik, S. Zak, 'A Complete Gradient Clustering Algorithm for Features Analysis of X-ray Images', in: Information Technologies in Biomedicine, Ewa Pietka, Jacek Kawa (eds.), Springer-Verlag, Berlin-Heidelberg, 2010, pp. 15-24.](http://www.ibspan.waw.pl/~pakowal/publikacje/Charytanowicz_et_al%20A%20Complete%20Gradient%20Clustering%20Algorithm%20for%20Features%20Analysis%20of%20X-ray%20Images.pdf)
 
 
 
